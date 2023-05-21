@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:visibility="visible"
+        tools:visibility="visible"
+        android:id="@+id/tvNameContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:text="Выберите контакт"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/contact_3" />
+
+    <TextView
+        android:text="Номер телефона"
+        tools:visibility="visible"
+        android:visibility="visible"
+        android:id="@+id/tvNumberContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNameContact"
+        app:layout_constraintStart_toStartOf="@+id/tvNameContact"
+        app:layout_constraintTop_toBottomOf="@+id/edName"
+        tools:text="@string/_7_474_646_53_43" />
+
+
+    <Button
+        tools:visibility="visible"
+        android:id="@+id/bEdit"
+        android:visibility="invisible"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/edit_contact"
+        app:layout_constraintEnd_toEndOf="@+id/tvNumberContact"
+        app:layout_constraintStart_toStartOf="@+id/tvNumberContact"
+        app:layout_constraintTop_toBottomOf="@+id/edNumber" />
+
+    <Button
+        android:id="@+id/bSave"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="@+id/tvNumberContact"
+        app:layout_constraintStart_toStartOf="@+id/tvNumberContact"
+        app:layout_constraintTop_toBottomOf="@+id/edNumber" />
+
+    <EditText
+        android:id="@+id/edNumber"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/new_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumberContact" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/new_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameContact" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
